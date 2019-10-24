@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Barberia",
-    "slug": "Barberia",
+    "name": "Mi Barberia",
+    "slug": "MiBarberia",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [

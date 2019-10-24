@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, ImageBackground } from "react-native";
+import { StyleSheet, View, ImageBackground, Image } from "react-native";
 
 export default function App() {
   return (
@@ -10,7 +10,12 @@ export default function App() {
           width: "100%",
           height: "100%"
         }}
-      ></ImageBackground>
+      >
+        <Image
+          source={require("./assets/logo.png")}
+          style={styles.logo}
+        ></Image>
+      </ImageBackground>
     </View>
   );
 }
@@ -18,8 +23,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: "transparent"
+  },
+  logo: {
+    alignSelf: "center",
+    position:"relative",
+    top:"39%",
+    width: 250,
+    height: 250
   }
 });
